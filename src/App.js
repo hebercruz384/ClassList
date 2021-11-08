@@ -3,7 +3,8 @@ import "./styles.css";
 function ListItem(firstName, lastName) {
   return (
     <li>
-      {firstName}{lastName
+      {firstName}
+      {lastName}
     </li>
   );
 }
