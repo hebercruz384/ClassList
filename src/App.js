@@ -9,16 +9,20 @@ function ListItem(firstName, lastName) {
     </tr>
   );
 }
+let classRoster = [
+  ["Heber", "Cruz"],
+  ["Chinaza", "Onwukanjo"],
+  ["Alex", "Sanchez"],
+  ["Claudia", "Luna-Marcelino"]
+];
+classRoster.map(function (person) {
+  return ListItem(person[0]);
+});
+
 export default function App() {
   return (
     <div className="App">
       <h1>Roster</h1>
-      <table>
-        {ListItem("Heber, Cruz")}
-        {ListItem("Chinaza, Onwukanjo")}
-        {ListItem("Alex, Sanchez")}
-        {ListItem("Claudia, Luna-Marcelino")}
-      </table>
     </div>
   );
 }
