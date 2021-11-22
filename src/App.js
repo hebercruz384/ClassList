@@ -1,28 +1,28 @@
 import "./styles.css";
 
-function ListItem(firstName, lastName) {
-  let ListItem = [];
+function ListItem(personData) {
   return (
     <tr>
-      <td>{firstName}</td>
-      <td>{lastName}</td>
+      <td>{personData[0]}</td>
+      <td>{personData[1]}</td>
+      <td>{personData[2]}</td>
     </tr>
   );
 }
 let classRoster = [
-  ["Heber", "Cruz"],
-  ["Chinaza", "Onwukanjo"],
-  ["Alex", "Sanchez"],
-  ["Claudia", "Luna-Marcelino"]
+  ["Heber", "Cruz", "he/him"],
+  ["Chinaza", "Onwukanjo", "she/her"],
+  ["Alex", "Sanchez", "he/him"],
+  ["Claudia", "Luna-Marcelino", "she/her"]
 ];
-classRoster.map(function (person) {
-  return ListItem(person[0]);
-});
+
+let rosterList = classRoster.map(ListItem);
 
 export default function App() {
   return (
     <div className="App">
       <h1>Roster</h1>
+      <table>{rosterList}</table>
     </div>
   );
 }
