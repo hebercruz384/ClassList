@@ -1,0 +1,6 @@
+let classRoster = [
+  {firstname: "Heber", lastname: "Cruz", pronouns: "he/him"} ,
+  {firstname: "Chinaza", lastname: "Onwukanjo", pronouns: "she/her"},
+  {firstname: "Alex", lastname: "Sanchez", pronouns: "he/him"},
+  {firstname: "Claudia", lastname: "Luna-Marcelino", pronouns: "she/her"},
+];

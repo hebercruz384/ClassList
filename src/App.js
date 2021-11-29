@@ -3,19 +3,18 @@ import "./styles.css";
 function ListItem(personData) {
   return (
     <tr>
-      <td>{personData[0]}</td>
-      <td>{personData[1]}</td>
-      <td>{personData[2]}</td>
+      <td>{personData.firstname}</td>
+      <td>{personData.lastname}</td>
+      <td>{personData.pronouns}</td>
     </tr>
   );
 }
 let classRoster = [
-  ["Heber", "Cruz", "he/him"],
-  ["Chinaza", "Onwukanjo", "she/her"],
-  ["Alex", "Sanchez", "he/him"],
-  ["Claudia", "Luna-Marcelino", "she/her"]
+  { firstname: "Heber", lastname: "Cruz", pronouns: "he/him" },
+  { firstname: "Chinaza", lastname: "Onwukanjo", pronouns: "she/her" },
+  { firstname: "Alex", lastname: "Sanchez", pronouns: "he/him" },
+  { firstname: "Claudia", lastname: "Luna-Marcelino", pronouns: "she/her" }
 ];
-
 let rosterList = classRoster.map(ListItem);
 
 export default function App() {
