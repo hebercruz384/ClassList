@@ -3,15 +3,21 @@
   text-align: center;
 }
 
-tr {
-  border: 1px solid black;
+td {
+  border: 6px solid black;
   border-collapse: collapse;
-  padding: 5px;
+  padding: 10px;
 }
 
 tr:nth-child(even) {
   background-color: #8f9aa5;
 }
 table {
-  background-color: #bde9ba;
+  background-color: crimson;
+}
+tr:nth-child(odd) {
+  background-color : blueviolet
+}
+h1 {
+  color :yellowgreen
 }
